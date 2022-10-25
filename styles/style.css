@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@900&display=swap');
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 2fr 3fr 1fr;
+    height: 100vh;
+}
+header{
+    background-color: grey;
+    grid-column: 1/4;
+}
+main{
+    background-color: grey;
+    grid-column: 1/4;
+    display: flex;
+}
+footer{
+    background-color: grey;
+    grid-column: 1/4;
+    text-align: end;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Kaushan Script', cursive;
+    border-top: 2.5px solid white;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 2.5px solid white;
+}
+.menu-list{
+    display: inline-flex;
+    gap: 2.5rem;
+    list-style-type: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Kaushan Script',cursive;
+}
+img{
+    width: 30em;
+    margin-left: 20px;
+    border: 2.5px solid white;
+    margin-bottom: 20px;
+}
+.my-details{
+    margin: auto;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+h1{
+    font-size: 3rem;
+    margin: 20px 0;
+    animation-name: fun;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+h3{
+    font-size: 1.5rem;
+}
+a:hover{
+    color: lightcoral;
+}
+
+@keyframes fun{
+    0%{color: gold;}
+    25%{color: greenyellow;}
+    50%{color: lightcoral;}
+    75%{color: lightseagreen;}
+    100%{color: blueviolet;}
+}
