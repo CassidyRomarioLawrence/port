@@ -51,6 +51,7 @@ img{
     margin-left: 20px;
     border: 2.5px solid white;
     margin-bottom: 20px;
+    object-fit: cover;
 }
 .my-details{
     margin: auto;
@@ -79,4 +80,37 @@ a:hover{
     50%{color: lightcoral;}
     75%{color: lightseagreen;}
     100%{color: blueviolet;}
+}
+.about img{
+    width: 25em;
+    object-fit: cover;
+}
+.contact img{
+    width:35em;
+}
+.socials{
+    list-style: none;
+    padding: 2rem;
+}
+.socials li{
+    padding: 1.5rem;
+    font-size: 25px;
+    border-bottom: 2px solid;
+}
+.socials li:hover{
+    cursor: pointer;
+    color: sandybrown;
+    font-size: 27px;
+}
+img:hover{
+    width: 20em;
+    animation: pictureAnimation 1s infinite;
+}
+@keyframes pictureAnimation{
+    0%{
+        opacity: 0.5;
+    }
+    30%{transform: scale(0.4);}
+    50%{transform: rotate(300deg);}
+    100%{transform: translateX(50);}
 }
